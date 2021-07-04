@@ -1,0 +1,109 @@
+.lotus {
+  width: 200px;
+  height: 200px;
+  border: 1px solid;
+  position: relative;
+}
+
+.lotus > div {
+  position: absolute;
+  border-radius: 0 70% 40% 70%;
+  border: 1px solid;
+  width: 120px;
+  height: 120px;
+  left: 10px;
+  top: 50px;
+  transform: rotate(45deg);
+  transform-origin: 90px 90px;
+  animation-duration: 6000ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.lotus > div:nth-child(1) {
+  animation-name: pedal-1;
+  background-color: rgba(255, 0, 0, 0.21);
+}
+
+.lotus > div:nth-child(2) {
+  animation-name: pedal-2;
+  background-color: rgba(255, 255, 0, 0.21);
+}
+
+.lotus > div:nth-child(3) {
+  background-color: rgba(0, 255, 0, 0.21);
+}
+
+.lotus > div:nth-child(4) {
+  animation-name: pedal-4;
+  background-color: rgba(0, 255, 255, 0.21);
+}
+
+.lotus > div:nth-child(5) {
+  animation-name: pedal-5;
+  background-color: rgba(0, 0, 255, 0.21);
+}
+
+@keyframes pedal-1 {
+  0% {
+    transform: rotate(45deg);
+  }
+}
+@keyframes pedal-2 {
+  0% {
+    transform: rotate(45deg);
+  }
+}
+
+/* @keyframes pedal-3 {
+0% {
+transform: rotate(0deg);
+}
+} */
+
+@keyframes pedal-4 {
+  0% {
+    transform: rotate(45deg);
+  }
+}
+@keyframes pedal-5 {
+  0% {
+    transform: rotate(45deg);
+  }
+}
+@keyframes pedal-1 {
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+@keyframes pedal-2 {
+  100% {
+    transform: rotate(135deg);
+  }
+}
+
+/* @keyframes pedal-3 {
+0% {
+transform: rotate(0deg);
+}
+} */
+
+@keyframes pedal-4 {
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes pedal-5 {
+  100% {
+    transform: rotate(90deg);
+  }
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body, html {
+  height: 100%;
+}
